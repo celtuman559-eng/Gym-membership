@@ -1,11 +1,15 @@
-CREATE TABLE Members (
-    id INT PRIMARY KEY,
-    member VARCHAR(100) NOT NULL,
-    join_date DATE NOT NULL,
-    is_active BOOLEAN DEFAULT TRUE
+-- 1. Create the Gym Progress table
+CREATE TABLE gym_progress_vault (
+    id SERIAL PRIMARY KEY,
+    member TEXT NOT NULL,
+    exercises_done TEXT NOT NULL,
+    cost DECIMAL(10, 2),
+    statut_session TEXT DEFAULT 'completed'
 );
 
-INSERT INTO Members (id, member, join_date, is_active) VALUES
-(1, 'Claire', '2025-01-10', TRUE),
-(2, 'Kai', '2025-02-15', TRUE),
-(3, 'Kealani', '2025-03-01', TRUE);
+-- 2. Insert the session data
+INSERT INTO gym_progress_vault (member, exercises_done, cost)
+VALUES 
+('Claire', 'Yoga', 10.00),
+('Kai', 'Treadmill', 15.00),
+('Kealani', 'Biking', 20.00);
