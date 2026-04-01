@@ -1,0 +1,11 @@
+CREATE TABLE Members (
+    id INT PRIMARY KEY,
+    member VARCHAR(100) NOT NULL,
+    join_date DATE NOT NULL,
+    is_active BOOLEAN DEFAULT TRUE
+);
+
+INSERT INTO Members (id, member, join_date, is_active) VALUES
+(1, 'Claire', '2025-01-10', TRUE),
+(2, 'Kai', '2025-02-15', TRUE),
+(3, 'Kealani', '2025-03-01', TRUE);
