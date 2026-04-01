@@ -1,4 +1,4 @@
-id,member,exercises_done,cost
-101,Claire,Yoga,$10
-102,Kai,Treadmill,$15
-103,Kealani,Biking,$20
+id,member,exercises,cost
+301,Claire,Yoga,10
+302,Kai,Treadmill,15
+303,Kealani,Biking,20
